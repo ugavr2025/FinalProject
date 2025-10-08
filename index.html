@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to VR - Final Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .nav-link.active {
+            border-bottom-color: #0d9488; /* teal-600 */
+            color: #0f766e; /* teal-700 */
+            font-weight: 600;
+        }
+    </style>
+    </head>
+<body class="bg-stone-50 text-slate-800">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-7xl">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-teal-800">Introduction to Virtual Reality</h1>
+            <p class="text-xl md:text-2xl text-slate-600 mt-2">Final Project</p>
+        </header>
+
+        <nav class="flex flex-wrap justify-center border-b-2 border-stone-200 mb-8">
+            <a href="#" class="nav-link active text-lg py-3 px-4 md:px-6 border-b-4 border-transparent hover:border-teal-500 hover:text-teal-600 transition-colors" data-target="overview">Overview</a>
+            <a href="#" class="nav-link text-lg py-3 px-4 md:px-6 border-b-4 border-transparent hover:border-teal-500 hover:text-teal-600 transition-colors" data-target="requirements">Requirements</a>
+            <a href="#" class="nav-link text-lg py-3 px-4 md:px-6 border-b-4 border-transparent hover:border-teal-500 hover:text-teal-600 transition-colors" data-target="timeline">Timeline & Deliverables</a>
+            <a href="#" class="nav-link text-lg py-3 px-4 md:px-6 border-b-4 border-transparent hover:border-teal-500 hover:text-teal-600 transition-colors" data-target="grading">Grading</a>
+            <a href="#" class="nav-link text-lg py-3 px-4 md:px-6 border-b-4 border-transparent hover:border-teal-500 hover:text-teal-600 transition-colors" data-target="concepts">Project Concepts</a>
+            <a href="#" class="nav-link text-lg py-3 px-4 md:px-6 border-b-4 border-transparent hover:border-teal-500 hover:text-teal-600 transition-colors" data-target="graduate">Graduate Students</a>
+        </nav>
+
+        <main id="content-sections">
+            <section id="overview" class="content-section">
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm">
+                    <h2 class="text-2xl font-bold text-teal-700 mb-4">Project Overview</h2>
+                    <p class="text-slate-600 mb-4">This final project is the culmination of the skills you have developed throughout the semester. Working in teams, you will design, develop, and demonstrate a collaborative mixed or virtual reality application. The goal is to create a functional and polished experience that is designed to teach or practice a useful skill.</p>
+                    <p class="text-slate-600 mb-6">Your application should not be purely for entertainment, though it can and should be engaging. You will be evaluated on your project's functionality, technical quality, and your ability to effectively demonstrate your work in a public session.</p>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-fuchsia-50 border-l-4 border-fuchsia-500 p-4 rounded-r-lg">
+                            <h3 class="font-semibold text-lg text-fuchsia-800">Team Project</h3>
+                            <ul class="list-disc list-inside mt-2 text-fuchsia-700 space-y-1">
+                                <li>Teams of <strong>2 to 4 people</strong>.</li>
+                                <li>Students choose their own groups.</li>
+                                <li>Equitable participation is expected and will be monitored via GitHub contributions.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-sky-50 border-l-4 border-sky-500 p-4 rounded-r-lg">
+                            <h3 class="font-semibold text-lg text-sky-800">Required Hardware</h3>
+                             <ul class="list-disc list-inside mt-2 text-sky-700 space-y-1">
+                                <li><strong>Meta Quest 3</strong> headsets are the target platform.</li>
+                                <li>You may use lab headsets or bring your own.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 grid md:grid-cols-2 gap-6 text-center">
+                        <div class="bg-teal-50/50 p-6 rounded-lg border border-teal-200">
+                             <h3 class="font-semibold text-lg text-teal-800 mb-2">Public Project Website</h3>
+                            <p class="text-slate-600 mb-4 text-sm">Create your public-facing team website to showcase your project to the world. Sign up here once your team is formed.</p>
+                            <a href="https://classroom.github.com/a/Szsfc70k" target="_blank" class="inline-block bg-slate-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-slate-900 transition-transform hover:scale-105">
+                                Create Website Repository
+                            </a>
+                        </div>
+                         <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                             <h3 class="font-semibold text-lg text-slate-800 mb-2">Private Code Repository</h3>
+                            <p class="text-slate-600 mb-4 text-sm">Create your private team repository for all project code and development assets. All members must contribute.</p>
+                            <a href="https://classroom.github.com/a/Uw2-zdmg" target="_blank" class="inline-block bg-teal-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-teal-800 transition-transform hover:scale-105">
+                                Create Code Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="requirements" class="content-section hidden">
+                 <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-4">📋</span>
+                        <h2 class="text-2xl font-bold text-teal-700">Core Project Requirements</h2>
+                    </div>
+                    <p class="mb-6 text-slate-500">All projects must meet the following technical requirements to be considered for a passing grade. These elements form the foundation of your application.</p>
+                    <ul class="list-disc list-outside space-y-4 pl-5 text-slate-600">
+                        <li><strong>Collaborative Application:</strong> The experience must be multi-user. Multiple people must be able to interact with each other or a shared virtual environment simultaneously.</li>
+                        <li><strong>AI-Driven Character:</strong> Your scene must contain at least one non-player character (NPC) driven by AI that users can interact with in a meaningful way (e.g., via voice, gestures, or actions).</li>
+                        <li><strong>UI System:</strong> There must be a user interface to start, configure, or reset the application. This should be intuitive and usable within VR/MR.</li>
+                        <li><strong>Avatars (for VR):</strong> If your application is fully virtual, each user must be represented by an avatar that reflects their position and movement.</li>
+                        <li><strong>Anchors (for MR):</strong> If your application is in mixed reality, you must use spatial anchors to ensure that virtual content remains correctly aligned and positioned in the real world across sessions and devices.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="timeline" class="content-section hidden">
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm">
+                    <h2 class="text-2xl font-bold text-teal-700 mb-6">Timeline & Deliverables</h2>
+                    <div class="space-y-8 relative border-l-2 border-slate-200 pl-8">
+                        <div class="absolute -left-3.5 top-2 w-6 h-6 bg-teal-500 rounded-full border-4 border-white"></div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-800">Team Formation & Initial Website</h3>
+                            <p class="text-lg font-semibold text-teal-600 mb-2">Due: Tuesday, November 4</p>
+                            <ul class="list-disc pl-5 space-y-1 text-slate-600">
+                                <li>Teams of 2-4 must be finalized.</li>
+                                <li>Create your public GitHub Pages site for your team.</li>
+                                <li>The site must include a basic project description, photos, and brief bios for all team members.</li>
+                            </ul>
+                        </div>
+
+                        <div class="absolute -left-3.5 top-[11.5rem] w-6 h-6 bg-teal-500 rounded-full border-4 border-white"></div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-800">Website Update & Advertisement Video</h3>
+                            <p class="text-lg font-semibold text-teal-600 mb-2">Due: Tuesday, December 2</p>
+                            <ul class="list-disc pl-5 space-y-1 text-slate-600">
+                                <li>Post a compelling advertisement video for your project on your website.</li>
+                                <li>Update the project description to reflect the final, demonstrable version of your application.</li>
+                                <li>The project scope and features should be locked at this point.</li>
+                            </ul>
+                        </div>
+
+                         <div class="absolute -left-3.5 top-[21rem] w-6 h-6 bg-fuchsia-600 rounded-full border-4 border-white"></div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-800">Final Public Demonstration</h3>
+                            <p class="text-lg font-semibold text-fuchsia-600 mb-2">Event: Tuesday, December 9, Noon - 3:00 PM</p>
+                            <ul class="list-disc pl-5 space-y-1 text-slate-600">
+                                <li>Live, interactive demo session in the <strong>VR Lab (MLC)</strong>.</li>
+                                <li>All team members must be present for the entire duration.</li>
+                                <li>Your project will be judged and open for public participation.</li>
+                            </ul>
+                        </div>
+
+                        <div class="absolute -left-3.5 top-[30rem] w-6 h-6 bg-slate-600 rounded-full border-4 border-white"></div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-800">Final Code Submission</h3>
+                            <p class="text-lg font-semibold text-slate-600 mb-2">Due: Thursday, December 11</p>
+                             <ul class="list-disc pl-5 space-y-1 text-slate-600">
+                                <li>All final code and assets must be pushed to your team's private GitHub repository.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="grading" class="content-section hidden">
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm">
+                    <h2 class="text-2xl font-bold text-teal-700 mb-6">Grading Rubric</h2>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-slate-50 border-t-4 border-teal-500 p-6 rounded-b-lg shadow-sm">
+                            <h3 class="text-2xl font-bold text-teal-700">50%</h3>
+                            <p class="font-semibold text-slate-700 text-lg mb-2">Core Functionality</p>
+                            <p class="text-slate-600">Emphasis on a minimally viable product. Does the application work as intended? Are all core requirements (collaboration, AI, UI) met and functional?</p>
+                        </div>
+                         <div class="bg-slate-50 border-t-4 border-sky-500 p-6 rounded-b-lg shadow-sm">
+                            <h3 class="text-2xl font-bold text-sky-700">20%</h3>
+                            <p class="font-semibold text-slate-700 text-lg mb-2">Technical Quality & Polish</p>
+                            <p class="text-slate-600">Emphasis on performance and stability. Does the application maintain a comfortable frame rate (FPS)? Is it free of major glitches or bugs?</p>
+                        </div>
+                         <div class="bg-slate-50 border-t-4 border-fuchsia-500 p-6 rounded-b-lg shadow-sm">
+                            <h3 class="text-2xl font-bold text-fuchsia-700">20%</h3>
+                            <p class="font-semibold text-slate-700 text-lg mb-2">Final Presentation / Demo</p>
+                            <p class="text-slate-600">Emphasis on functionality during the live demo session. Can you effectively showcase your project's features and purpose to an audience?</p>
+                        </div>
+                         <div class="bg-slate-50 border-t-4 border-amber-500 p-6 rounded-b-lg shadow-sm">
+                            <h3 class="text-2xl font-bold text-amber-700">10%</h3>
+                            <p class="font-semibold text-slate-700 text-lg mb-2">Project Website</p>
+                            <p class="text-slate-600">Emphasis on creating a good advertisement for your project. Is the website professional, up-to-date, and does it clearly communicate your project's value?</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg">
+                        <h3 class="text-2xl font-bold text-amber-800 mb-3">🏆 Best Project Extra Credit</h3>
+                        <p class="text-slate-600 mb-4">
+                            Projects will be judged and ranked by an independent panel of experts during the final demonstration. The top-ranked projects will receive extra credit. Judging will be based on the following three dimensions:
+                        </p>
+                        <ul class="list-none space-y-3">
+                            <li class="flex items-start">
+                                <span class="font-bold text-amber-700 w-24 flex-shrink-0">Value:</span>
+                                <span class="text-slate-600">How much is this project worth to someone? This considers the project's general utility, impact, and value proposition.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold text-amber-700 w-24 flex-shrink-0">Technical:</span>
+                                <span class="text-slate-600">How challenging and complex was the XR system to create? This evaluates the technical ambition and execution.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold text-amber-700 w-24 flex-shrink-0">Novelty:</span>
+                                <span class="text-slate-600">How creative is the concept and implementation relative to other projects? This rewards originality and fresh ideas.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="concepts" class="content-section hidden">
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-4">💡</span>
+                        <h2 class="text-2xl font-bold text-teal-700">Application Concepts</h2>
+                    </div>
+                    <p class="text-slate-600 mb-6">This is a short list of potential ideas to get you started. You are highly encouraged to develop your own unique concept or brainstorm with your team and AI tools.</p>
+                    <ul class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-3 list-disc list-outside pl-5 text-slate-600">
+                        <li>Rehabilitation</li>
+                        <li>Exposure Therapy</li>
+                        <li>Surgery (or surgical planning)</li>
+                        <li>Control/Data visualization center</li>
+                        <li>Architecture & Urban Planning</li>
+                        <li>Collaborative data visualization</li>
+                        <li>Training on expensive lab equipment</li>
+                        <li>Social interaction training</li>
+                        <li>Complex assembly training</li>
+                        <li>Path planning for robots/drones</li>
+                        <li>Virtual Sculpting or 3D Painting</li>
+                        <li>Recreating historical sites</li>
+                        <li>Dance/Cinema Choreography</li>
+                        <li>Spatial Music Visualization</li>
+                        <li>Sports training/evaluation</li>
+                    </ul>
+                </div>
+            </section>
+
+             <section id="graduate" class="content-section hidden">
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-4">🎓</span>
+                        <h2 class="text-2xl font-bold text-teal-700">Graduate Student Requirements</h2>
+                    </div>
+                    <p class="text-slate-600 mb-6">In addition to all other project requirements, graduate students must complete the following research-oriented tasks. These demonstrate a deeper engagement with the academic context of your work. If a team includes multiple graduate students, they are only required to submit one collaborative report.</p>
+                    <ul class="list-none space-y-4 text-slate-600">
+                        <li class="flex items-start"><span class="text-teal-500 font-bold text-xl mr-3 mt-1">✓</span><div><strong>Literature Review:</strong> The review should survey existing research and related work in your chosen area, identifying key challenges, techniques, and opportunities. This should be submitted as a markdown file (`literature_review.md`) in your private code repository with academic, peer-reviewed sources.</div></li>
+                        <li class="flex items-start"><span class="text-teal-500 font-bold text-xl mr-3 mt-1">✓</span><div><strong>Research Proposal:</strong> Based on your literature review, you must formulate a research proposal. This should identify a clear research question, propose a methodology, and explain the potential contribution to the field. You are not required to conduct the research, only to propose it. This can be included in your literature review markdown file.</div></li>
+                    </ul>
+                    <div class="mt-6 bg-red-50 border-l-4 border-red-500 p-4 rounded-r-lg">
+                        <h4 class="font-bold text-red-800">Important Grading Note</h4>
+                        <p class="text-red-700">This research component is mandatory for graduate students. Failure to submit a satisfactory report will result in a penalty of <strong>up to 20 points</strong> from the entire group's final project score.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const contentSections = document.querySelectorAll('.content-section');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute('data-target');
+
+                    navLinks.forEach(navLink => navLink.classList.remove('active'));
+                    this.classList.add('active');
+
+                    contentSections.forEach(section => {
+                        section.classList.toggle('hidden', section.id !== targetId);
+                    });
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
